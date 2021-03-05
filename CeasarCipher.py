@@ -23,7 +23,7 @@ for _ in plainASCII:
     if (65 <= _ <= (90 - shift)):
         shiftedASCII.append(_ + shift)
     elif ((90 - shift) < _ <= 90):
-        shiftedASCII.append(64 + (shift + (90 - _)))
+        shiftedASCII.append(64 + (shift - (90 - _)))
     else:
         shiftedASCII.append(_)
 
